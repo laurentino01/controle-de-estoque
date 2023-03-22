@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle de Estoque</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Controle de Estoque</h1>
+    </header>
+    <main>
+      <h2>Registro de produtos</h2>
+      <div class="card">
+        <form action="">
+          <label for="">
+            nome do produto
+            <input
+              type="text"
+              id="productName"
+              placeholder="Digite o nome do novo produto"
+            />
+          </label>
+          <label for="">
+            Valor do produto
+            <input type="number" id="productValue" placeholder="R$ 00.00" />
+          </label>
+        </form>
+        <div class="card__btns">
+          <button onclick="produto.add()">Adicionar produto</button>
+          <button onclick="produto.clearInputs()">Limpar formulário</button>
+        </div>
+      </div>
+      <p>Lista de produtos</p>
+      <div class="table-area">
+        <table border="1">
+          <thead>
+            <th>ID</th>
+            <th>Nome do Produto</th>
+            <th>Valor</th>
+            <th>Ações</th>
+          </thead>
+          <tbody id="table-area__body"></tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

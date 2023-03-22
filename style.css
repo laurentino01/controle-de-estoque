@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: rgba(24, 24, 24, 0.932);
+  color: rgb(240, 240, 240);
+  padding: 30px 0 10px 0;
+}
+main {
+  margin: 40px auto;
+  max-width: 1040px;
+  width: 95%;
+  color: rgba(24, 24, 24, 0.932);
+}
+
+.card {
+  margin: 20px 0;
+  background-color: rgb(224, 248, 255);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(105, 120, 124);
+}
+
+.card label {
+  display: block;
+}
+.card label > input {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+}
+.card__btns button {
+  cursor: pointer;
+  background-color: rgba(24, 24, 24, 0.932);
+  color: rgb(240, 240, 240);
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+.card__btns button:hover {
+  background-color: rgba(0, 0, 0, 0.945);
+  transition: 0.5s;
+}
+main > p {
+  margin-bottom: 20px;
+}
+.table-area {
+  overflow-x: scroll;
+}
+table {
+  width: 100%;
+  min-width: 425px;
+  border-collapse: collapse;
+  border: rgb(240, 240, 240);
+}
+
+table th {
+  background-color: rgba(24, 24, 24, 0.932);
+  color: rgb(240, 240, 240);
+  padding: 5px 0;
+}
+table td {
+  padding: 5px;
+  text-align: center;
+}
+table td i {
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  main {
+    text-align: center;
+  }
+
+  .card__btns button {
+    width: 40%;
+    padding: 0 5px;
+  }
+}
